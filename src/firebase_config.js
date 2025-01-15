@@ -1,8 +1,7 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore"; // Para Firestore
-import { getDatabase } from "firebase/database";   // Para Realtime Database
-
+import { connectFirestoreEmulator, getFirestore } from "firebase/firestore"; // Para Firestore
+import { connectDatabaseEmulator, getDatabase } from "firebase/database";   // Para Realtime Database
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -20,7 +19,14 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+const firestore_ = getFirestore(app);
+const database_ = getDatabase(app);
+
+if (process.env.NODE_ENV === "development") {
+  connectFirestoreEmulator(firestore_, "localhost", 4242);
+  connectDatabaseEmulator(database_, "localhost", 9000);
+}
 
 // Inicializa os serviços necessários
-export const firestore = getFirestore(app); // Para Firestore
-export const database = getDatabase(app);   // Para Realtime Datab
+export {firestore_, database_} // Para Firestore
+// Para Realtime Datab
