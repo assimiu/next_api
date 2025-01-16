@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.conteiner-novidade {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid #fff;
+    border-radius: 2rem;
+    background-color: #242323;
+}
+
+.imagem {
+    border-radius: 2rem;
+}
+
+.conteiner-info {
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.titulo {
+    text-align: start;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.descricao {
+    text-align: start;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
+}
