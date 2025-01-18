@@ -1,8 +1,6 @@
 'use client'; // Necessário no App Router para indicar que este é um componente Client-Side
 import NavBar from "./components/navbar/NavBar";
-import Main
- from "./components/conteiner/main/Main";
-import ItemNovidade from "./components/item/card/Card";
+import Main from "./components/conteiner/main/Main";
 export default function Home() {
   return (
     <div >
