@@ -7,10 +7,6 @@
     font-family: Arial, sans-serif;
 }
 
-/* Body (Adaptação para Menu Fixo) */
-body {
-    padding-top: 4rem; /* Espaço para o menu fixo */
-}
 
 /* Container Principal */
 .container-nav-bar {

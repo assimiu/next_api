@@ -1,4 +1,3 @@
-import Mensagem from "@/app/components/Mensagem";
 import { database_ } from "@/firebase_config";
 import { ref, get } from "firebase/database";
 import { NextResponse } from "next/server";

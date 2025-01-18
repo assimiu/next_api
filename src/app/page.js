@@ -2,15 +2,15 @@
 import NavBar from "./components/navbar/NavBar";
 import Main from "./components/conteiner/main/Main";
 import Titulo from "./components/titulo/Titulo";
+import "./page.css"
 export default function Home() {
   return (
-    <div >
+    <div className="conteiner-home">
       <NavBar/>
       
-      <div style={{marginTop: "35px", marginLeft: "2px", marginRight: "2px", padding: "20px"}}>
+      <div className="main">
         <Titulo/>
         <Main/>
-
       </div>
 
     </div>

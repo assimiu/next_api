@@ -31,13 +31,13 @@ img {
     justify-content: start;
     background-color: #292828;
     border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(243, 242, 242, 0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .grid-wrapper > div:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 16px rgba(121, 119, 119, 0.3);
 }
 
 /* Imagem dentro dos itens do grid */
