@@ -6,7 +6,7 @@ export default function Home() {
     <div >
       <NavBar/>
       
-      <div style={{marginTop: "35px", marginLeft: "20px", marginRight: "20px"}}>
+      <div style={{marginTop: "35px", marginLeft: "8px", marginRight: "8px"}}>
         <Main/>
 
       </div>

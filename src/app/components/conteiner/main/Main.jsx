@@ -14,31 +14,48 @@ export default function Main() {
                 </div>
                 <div>
                     <img src="/img/img.jpg" alt="" />
+                    <h3>Ziara Quebo 2025</h3>
                     <p>As preposições são palavras invariáveis que servem para ligar termos em uma oração, estabelecendo relações de dependência, sentido ou significado entre eles. Elas podem indicar diversos tipos de relações, As preposições são palavras invariáveis que servem para ligar termos em uma oração, estabelecendo relações de dependência, sentido ou significado entre eles. Elas podem entre outras. Conhecer e usar as preposições corretamente é essencial para a construção de frases claras </p>
                 </div>
                 <div>
                     <img src="/img/img.jpg" alt="" />
+
+                    <h3>Ziara Quebo 2025</h3>
                 </div>
                 <div className="tall">
                     <img src="/img/img.jpg" alt="" />
+
+                    <h3>Ziara Quebo 2025</h3>
                 </div>
                 <div>
                     <img src="/img/img.jpg" alt="" />
+
+                    <h3>Ziara Quebo 2025</h3>
                 </div>
                 <div>
                     <img src="/img/img.jpg" alt="" />
+
+                    <h3>Ziara Quebo 2025</h3>
                 </div>
                 <div>
                     <img src="/img/img.jpg" alt="" />
+
+                    <h3>Ziara Quebo 2025</h3>
                 </div>
                 <div>
                     <img src="/img/img.jpg" alt="" />
+
+                    <h3>Ziara Quebo 2025</h3>
                 </div>
                 <div>
                     <img src="/img/img.jpg" alt="" />
+
+                    <h3>Ziara Quebo 2025</h3>
                 </div>
                 <div className="big">
                     <img src="/img/img.jpg" alt="" />
+
+                    <h3>Ziara Quebo 2025</h3>
                 </div>
             </div>
         </div>
