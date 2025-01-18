@@ -1,21 +1,29 @@
 import "./main.css"
-export default function Main() {
+export default function Main({dados}) {
 
-    const data = [
-        {"id":"4", "cultura":"", "size":"big", "image": "/img/img.jpg", "descricao": "As preposições são palavras invariáveis que servem para ligar termos em uma oração, estabelecendo relações de dependência, sentido ou significado entre eles. Elas podem indicar diversos tipos de relações, As preposições são palavras invariáveis que servem para ligar termos em uma oração, estabelecendo relações de dependência, sentido ou significado entre eles."},
-        {"id":"1", "desporto":"", "size":"big", "image": "/img/img.jpg", "descricao": "As preposições são palavras invariáveis que servem para ligar termos em uma oração, estabelecendo relações de dependência, sentido ou significado entre eles. Elas podem indicar diversos tipos de relações, As preposições são palavras invariáveis que servem para ligar termos em uma oração, estabelecendo relações de dependência, sentido ou significado entre eles."},
-        {"id":"3", "politica":"", "size":"wide", "image": "/img/img.jpg", "descricao": "As preposições são palavras invariáveis que servem para ligar termos em uma oração, estabelecendo relações de dependência, sentido ou significado entre eles. Elas podem indicar diversos tipos de relações, As preposições são palavras invariáveis que servem para ligar termos em uma oração, estabelecendo relações de dependência, sentido ou significado entre eles."},
-        {"id":"2", "ciencia":"", "size":"wide", "image": "/img/img.jpg", "descricao": "As preposições são palavras invariáveis que servem para ligar termos em uma oração, estabelecendo relações de dependência, sentido ou significado entre eles. Elas podem indicar diversos tipos de relações, As preposições são palavras invariáveis que servem para ligar termos em uma oração, estabelecendo relações de dependência, sentido ou significado entre eles."},
-        {"id":"5", "fofoca":"", "size":"wide", "image": "/img/img.jpg", "descricao": "As preposições são palavras invariáveis que servem para ligar termos em uma oração, estabelecendo relações de dependência, sentido ou significado entre eles. Elas podem indicar diversos tipos de relações, As preposições são palavras invariáveis que servem para ligar termos em uma oração, estabelecendo relações de dependência, sentido ou significado entre eles."},
-    ];
+  const substring = (descricao, comprimento) => {
+    if (comprimento <= 0 && !descricao)
+    {
+      return descricao.subString(0, 20) + ". . .Ler mais";
+    }
+    if (!descricao) {
+      return "";
+    }
+    else if (descricao.length > comprimento)
+    {
+        const texto = descricao.substring(0, comprimento);
+        return texto;
+    }
+    return descricao;
+  }
 
     return (
         <div className="grid-wrapper">
-                {data.map((item) => (
+                {dados.map((item) => (
                     <div key={item["id"]} className={item["size"]}>
                         <img src={item["image"]} alt="" />
-                        <h3>{item["titulo"]}</h3>
-                        <p className="titulo">{item["descricao"]}</p>
+                        <h3>{substring(item["titulo"], 20)}</h3>
+                        <p className="titulo">{substring(item["descricao"], 200)} {<strong>. . . Ler mais</strong>}</p>
                         <p className="tipo">Desporto</p>
                     </div>
                 ))}
