@@ -1,64 +1,25 @@
 import "./main.css"
 export default function Main() {
 
+    const data = [
+        {"id":"4", "cultura":"", "size":"big", "image": "/img/img.jpg", "descricao": "As preposições são palavras invariáveis que servem para ligar termos em uma oração, estabelecendo relações de dependência, sentido ou significado entre eles. Elas podem indicar diversos tipos de relações, As preposições são palavras invariáveis que servem para ligar termos em uma oração, estabelecendo relações de dependência, sentido ou significado entre eles."},
+        {"id":"1", "desporto":"", "size":"big", "image": "/img/img.jpg", "descricao": "As preposições são palavras invariáveis que servem para ligar termos em uma oração, estabelecendo relações de dependência, sentido ou significado entre eles. Elas podem indicar diversos tipos de relações, As preposições são palavras invariáveis que servem para ligar termos em uma oração, estabelecendo relações de dependência, sentido ou significado entre eles."},
+        {"id":"3", "politica":"", "size":"wide", "image": "/img/img.jpg", "descricao": "As preposições são palavras invariáveis que servem para ligar termos em uma oração, estabelecendo relações de dependência, sentido ou significado entre eles. Elas podem indicar diversos tipos de relações, As preposições são palavras invariáveis que servem para ligar termos em uma oração, estabelecendo relações de dependência, sentido ou significado entre eles."},
+        {"id":"2", "ciencia":"", "size":"wide", "image": "/img/img.jpg", "descricao": "As preposições são palavras invariáveis que servem para ligar termos em uma oração, estabelecendo relações de dependência, sentido ou significado entre eles. Elas podem indicar diversos tipos de relações, As preposições são palavras invariáveis que servem para ligar termos em uma oração, estabelecendo relações de dependência, sentido ou significado entre eles."},
+        {"id":"5", "fofoca":"", "size":"wide", "image": "/img/img.jpg", "descricao": "As preposições são palavras invariáveis que servem para ligar termos em uma oração, estabelecendo relações de dependência, sentido ou significado entre eles. Elas podem indicar diversos tipos de relações, As preposições são palavras invariáveis que servem para ligar termos em uma oração, estabelecendo relações de dependência, sentido ou significado entre eles."},
+    ];
+
     return (
-        <div className="corpo">
-            <div className="grid-wrapper">
-                <div className="big">
-                    <img src="/img/img.jpg" alt="" />
-                    <p>As preposições são palavras invariáveis que servem para ligar termos em uma oração, estabelecendo relações de dependência, sentido ou significado entre eles. Elas podem indicar diversos tipos de relações, As preposições são palavras invariáveis que servem para ligar termos em uma oração, estabelecendo relações de dependência, sentido ou significado entre eles. Elas podem indicar diversos tipos de relações, como lugar, tempo, causa, finalidade, entre outras. Conhecer e usar as preposições corretamente é essencial para a construção de frases claras </p>
-                </div>
-                <div className="wide">
-                    <img src="/img/img.jpg" alt="" />
-                    <p>As preposições são palavras invariáveis que servem para ligar termos em uma oração, estabelecendo relações de dependência, sentido ou significado entre eles. Elas podem indicar diversos tipos de relações, As preposições são palavras invariáveis que servem para ligar termos em uma oração, estabelecendo relações de dependência, sentido ou significado entre eles. Elas podem indicar diversos tipos de relações, como lugar, tempo, causa, finalidade, entre outras. Conhecer e usar as preposições corretamente é essencial para a construção de frases claras </p>
-                </div>
-                <div>
-                    <img src="/img/img.jpg" alt="" />
-                    <h3>Ziara Quebo 2025</h3>
-                    <p>As preposições são palavras invariáveis que servem para ligar termos em uma oração, estabelecendo relações de dependência, sentido ou significado entre eles. Elas podem indicar diversos tipos de relações, As preposições são palavras invariáveis que servem para ligar termos em uma oração, estabelecendo relações de dependência, sentido ou significado entre eles. Elas podem entre outras. Conhecer e usar as preposições corretamente é essencial para a construção de frases claras </p>
-                </div>
-                <div>
-                    <img src="/img/img.jpg" alt="" />
-
-                    <h3>Ziara Quebo 2025</h3>
-                </div>
-                <div className="tall">
-                    <img src="/img/img.jpg" alt="" />
-
-                    <h3>Ziara Quebo 2025</h3>
-                </div>
-                <div>
-                    <img src="/img/img.jpg" alt="" />
-
-                    <h3>Ziara Quebo 2025</h3>
-                </div>
-                <div>
-                    <img src="/img/img.jpg" alt="" />
-
-                    <h3>Ziara Quebo 2025</h3>
-                </div>
-                <div>
-                    <img src="/img/img.jpg" alt="" />
-
-                    <h3>Ziara Quebo 2025</h3>
-                </div>
-                <div>
-                    <img src="/img/img.jpg" alt="" />
-
-                    <h3>Ziara Quebo 2025</h3>
-                </div>
-                <div>
-                    <img src="/img/img.jpg" alt="" />
-
-                    <h3>Ziara Quebo 2025</h3>
-                </div>
-                <div className="big">
-                    <img src="/img/img.jpg" alt="" />
-
-                    <h3>Ziara Quebo 2025</h3>
-                </div>
+        <div className="grid-wrapper">
+                {data.map((item) => (
+                    <div key={item["id"]} className={item["size"]}>
+                        <img src={item["image"]} alt="" />
+                        <h3>{item["titulo"]}</h3>
+                        <p className="titulo">{item["descricao"]}</p>
+                        <p className="tipo">Desporto</p>
+                    </div>
+                ))}
             </div>
-        </div>
         
     );
 }

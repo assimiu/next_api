@@ -1,0 +1,11 @@
+.conteiner-titulo {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.conteiner-titulo > h3 {
+    width: 100%;
+    color: #000;
+    font-weight: bold;
+}
