@@ -1,6 +1,5 @@
 
 import "./Main.css";
-import Card from "../../item/card/Card";
 
 
 export default function Main() {

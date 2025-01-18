@@ -21,7 +21,7 @@ img {
 /* Layout do grid */
 .grid-wrapper {
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 10px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-auto-rows: auto;
     grid-auto-flow: dense;
@@ -35,7 +35,7 @@ img {
     align-items: center;
     justify-content: center;
     background-color: #292828;
-    padding: 20px;
+    padding: 10px;
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s, box-shadow 0.3s;
