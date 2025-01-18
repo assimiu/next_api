@@ -7,6 +7,11 @@
     font-family: Arial, sans-serif;
 }
 
+/* Body (Adaptação para Menu Fixo) */
+body {
+    padding-top: 4rem; /* Espaço para o menu fixo */
+}
+
 /* Container Principal */
 .container-nav-bar {
     display: flex;
@@ -15,9 +20,11 @@
     align-items: center;
     padding: 1rem 2rem;
     background-color: #1b1a1a;
-    position: sticky;
-    top: 0;
-    z-index: 10;
+    position: fixed; /* Fixa o menu no topo */
+    top: 0; /* Alinha ao topo */
+    width: 100%; /* Ocupa toda a largura */
+    z-index: 1000; /* Coloca o menu acima dos outros elementos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra */
 }
 
 /* Logo */
@@ -93,7 +100,7 @@
     z-index: 11;
 }
 
-/* Responsividade */
+/* Responsividade para Mobile */
 @media (max-width: 768px) {
     .hamburger-menu {
         display: block;
@@ -109,6 +116,7 @@
         background-color: #1b1a1a;
         padding: 2rem 1rem;
         transition: right 0.3s ease;
+        z-index: 999; /* Para sobrepor o conteúdo */
     }
 
     .nav-bar.open {

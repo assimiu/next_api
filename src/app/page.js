@@ -2,12 +2,16 @@
 import NavBar from "./components/navbar/NavBar";
 import Main
  from "./components/conteiner/main/Main";
-import ItemNovidade from "./components/item/novidade/ItemNovidade";
+import ItemNovidade from "./components/item/card/Card";
 export default function Home() {
   return (
     <div >
       <NavBar/>
-      <ItemNovidade largura={800}/>
+      
+      <div style={{marginTop: "35px", marginLeft: "20px", marginRight: "20px"}}>
+        <Main/>
+
+      </div>
 
     </div>
   );
