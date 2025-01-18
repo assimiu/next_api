@@ -56,11 +56,11 @@ img {
 }
 
 /* Títulos dos itens do grid */
-.grid-wrapper > div > h3 {
+.grid-wrapper > div > h5 {
     width: 100%;
-    text-align: center;
-    color: #fff;
-    font-size: 1.2rem;
+    text-align: justify;
+    color: #d7d2d2;
+    font-size: 1.1rem;
     margin-top: 10px;
     line-height: 1.4;
 }
@@ -96,7 +96,7 @@ img {
         padding: 15px;
     }
 
-    .grid-wrapper > div > h3 {
+    .grid-wrapper > div > h5 {
         font-size: 1rem;
     }
 }

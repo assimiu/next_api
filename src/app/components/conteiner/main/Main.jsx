@@ -6,13 +6,15 @@ export default function Main() {
             <div className="grid-wrapper">
                 <div className="big">
                     <img src="/img/img.jpg" alt="" />
-                    <h3>As preposições são palavras invariáveis que servem para ligar termos em uma oração, estabelecendo relações de dependência, sentido ou significado entre eles. Elas podem indicar diversos tipos de relações, As preposições são palavras invariáveis que servem para ligar termos em uma oração, estabelecendo relações de dependência, sentido ou significado entre eles. Elas podem indicar diversos tipos de relações, como lugar, tempo, causa, finalidade, entre outras. Conhecer e usar as preposições corretamente é essencial para a construção de frases claras </h3>
+                    <h5>As preposições são palavras invariáveis que servem para ligar termos em uma oração, estabelecendo relações de dependência, sentido ou significado entre eles. Elas podem indicar diversos tipos de relações, As preposições são palavras invariáveis que servem para ligar termos em uma oração, estabelecendo relações de dependência, sentido ou significado entre eles. Elas podem indicar diversos tipos de relações, como lugar, tempo, causa, finalidade, entre outras. Conhecer e usar as preposições corretamente é essencial para a construção de frases claras </h5>
                 </div>
                 <div className="wide">
                     <img src="/img/img.jpg" alt="" />
+                    <h5>As preposições são palavras invariáveis que servem para ligar termos em uma oração, estabelecendo relações de dependência, sentido ou significado entre eles. Elas podem indicar diversos tipos de relações, As preposições são palavras invariáveis que servem para ligar termos em uma oração, estabelecendo relações de dependência, sentido ou significado entre eles. Elas podem indicar diversos tipos de relações, como lugar, tempo, causa, finalidade, entre outras. Conhecer e usar as preposições corretamente é essencial para a construção de frases claras </h5>
                 </div>
                 <div>
                     <img src="/img/img.jpg" alt="" />
+                    <h5>As preposições são palavras invariáveis que servem para ligar termos em uma oração, estabelecendo relações de dependência, sentido ou significado entre eles. Elas podem indicar diversos tipos de relações, As preposições são palavras invariáveis que servem para ligar termos em uma oração, estabelecendo relações de dependência, sentido ou significado entre eles. Elas podem entre outras. Conhecer e usar as preposições corretamente é essencial para a construção de frases claras </h5>
                 </div>
                 <div>
                     <img src="/img/img.jpg" alt="" />
