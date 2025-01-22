@@ -2,11 +2,12 @@
     width: 100%;
 }
 
-.conteiner-titulo > h1 {
+.conteiner-titulo > h3 {
     padding-top: 8px;
     padding-bottom: 25px;
     padding-left: 10px;
     color: #dad6d6;
     font-weight: 900;
     font-style: oblique;
+    font-size: 22px;
 }

@@ -24,24 +24,28 @@ img {
 }
 
 /* Estilização dos itens do grid */
-.grid-wrapper > div {
+.grid-wrapper  div {
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: start;
+}
+
+.grid-wrapper > div > .item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(121, 119, 119, 0.3);
+}
+
+.grid-wrapper > div > .item {
+    padding: 4px;
     background-color: #292828;
     border-radius: 20px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.grid-wrapper > div:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(121, 119, 119, 0.3);
-}
-
 /* Imagem dentro dos itens do grid */
-.grid-wrapper > div > img {
+.grid-wrapper > div > .item > img {
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -49,7 +53,7 @@ img {
     margin-bottom: 10px;
 }
 
-.grid-wrapper > div > h3 {
+.grid-wrapper > div > .item > h3 {
     width: 100%;
     align-items: start;
     color: #eee8e8;
@@ -61,7 +65,7 @@ img {
 }
 
 /* Títulos dos itens do grid */
-.grid-wrapper > div > .titulo {
+.grid-wrapper > div > .item .descricao {
     width: 100%;
     text-align: justify;
     color: #d7d2d2;
@@ -73,14 +77,15 @@ img {
     padding-top: 5px;
 }
 
-.grid-wrapper > div > .tipo {
+.grid-wrapper > div > .item > .tipo {
     color: rgb(96, 244, 101);
     background-color: #454343;
     padding: 10px;
-    align-items: start;
+    width: 20%;
     font-weight: 600;
     margin-left: 8px;
     margin-right: 8px;
+    text-align: center;
     margin-bottom: 15px;
     border-radius: 15px;
 }
@@ -115,18 +120,18 @@ img {
         grid-row: span 1;
     }
 
-    .grid-wrapper > div {
-        padding: 15px;
+    .grid-wrapper > div > .item {
+        padding: 8px;
     }
 
     .grid-wrapper > div > p {
-        font-size: 1rem;
+        font-size: 0.80rem;
     }
 }
 
 @media (min-width: 1200px) {
     .grid-wrapper {
-        grid-gap: 30px;
+        grid-gap: 16px;
     }
 }
 

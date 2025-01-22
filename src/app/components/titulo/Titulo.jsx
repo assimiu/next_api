@@ -1,10 +1,10 @@
 import "./titulo.css"
 
-export default function Titulo() {
+export default function Titulo({titulo}) {
 
     return (
         <div className="conteiner-titulo">
-            <h1>Destaque do dia</h1>
+            <h3>{titulo ? titulo : "Destaques"}</h3>
         </div>
     );
 }

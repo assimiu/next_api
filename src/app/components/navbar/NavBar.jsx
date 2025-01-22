@@ -1,12 +1,13 @@
 import { useState } from "react";
 import "./navBar.css";
+import Link from "next/link";
 import Image from "next/image";
 
-export default function NavBar() {
+export default function NavBar({ imagem, titulo, itens }) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const toggleMenu = () => {
-        setIsMenuOpen(!isMenuOpen);
+        setIsMenuOpen((prevState) => !prevState);
     };
 
     return (
@@ -14,7 +15,7 @@ export default function NavBar() {
             <div className="container-logo">
                 <Image
                     className="logo"
-                    src="/logos/logstore.png"
+                    src={imagem ? imagem : "/logos/logstore.png"}
                     alt="GuineStore"
                     width={70}
                     height={60}
@@ -24,17 +25,26 @@ export default function NavBar() {
                 </h4>
             </div>
 
-            <button className="hamburger-menu" onClick={toggleMenu}>
-                ☰
+            {/* Botão Hambúrguer */}
+            <button
+                className={`hamburger-menu ${isMenuOpen ? "open" : ""}`}
+                onClick={toggleMenu}
+            >
+                {isMenuOpen ? "✖" : "☰"}
             </button>
 
-            <ul className={`nav-bar ${isMenuOpen ? "open" : ""}`}>
-                <li><a href="/">Início</a></li>
-                <li><a href="/">Novidade</a></li>
-                <li><a href="/">Seção</a></li>
-                <li><a href="/">Sobre</a></li>
-                <li><a href="/">Contato</a></li>
-            </ul>
+            {itens ? (
+                itens
+            ) : (
+                <ul className={`nav-bar ${isMenuOpen ? "open" : ""}`}>
+                    <li><Link href="/hom">Início</Link></li>
+                    <li><Link href="/home">NovidLinkde</Link></li>
+                    <li><Link href="/">Seção</Link></li>
+                    <li><Link href="/">Sobre</Link></li>
+                    <li><Link href="/">ContLinkto</Link></li>
+                </ul>
+            )}
         </nav>
     );
 }
+

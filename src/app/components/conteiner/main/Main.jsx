@@ -1,4 +1,5 @@
 import "./main.css"
+import Link from "next/link";
 export default function Main({dados}) {
 
   const substring = (descricao, comprimento) => {
@@ -20,11 +21,18 @@ export default function Main({dados}) {
     return (
         <div className="grid-wrapper">
                 {dados.map((item) => (
+                    
                     <div key={item["id"]} className={item["size"]}>
-                        <img src={item["image"]} alt="" />
-                        <h3>{substring(item["titulo"], 20)}</h3>
-                        <p className="titulo">{substring(item["descricao"], 200)} {<strong>. . . Ler mais</strong>}</p>
-                        <p className="tipo">Desporto</p>
+                        <Link href={{
+                          pathname: "/itemview",
+                          query: {"imagem": item["imagem"], "titulo": item["titulo"], "descricao": item["descricao"], "tipo": item["tipo"]}
+                        }}
+                        className="item">
+                            <img src={item["image"]} alt="" />
+                            <h3>{substring(item["titulo"], 20)}</h3>
+                            <p className="descricao">{substring(item["descricao"], 120)} {<strong>. . . Ler mais</strong>}</p>
+                            <p className="tipo">{item["tipo"]}</p>
+                        </Link>
                     </div>
                 ))}
             </div>
