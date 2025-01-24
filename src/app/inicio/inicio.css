@@ -1,0 +1,17 @@
+/* Body (Adaptação para Menu Fixo) */
+body {
+    padding-top: 3rem; /* Espaço para o menu fixo */
+    background-color: #000;
+}
+
+.conteiner-home {
+    background-color: #000;
+    margin-top: 50px;
+}
+.main {
+    padding: 20px;
+    background-color: #313131;
+    border-radius: 20px;
+    margin: 2px;
+    margin-bottom: 10px;
+}

@@ -1,6 +1,6 @@
-import "./main.css"
+import "./conteiner.css"
 import Link from "next/link";
-export default function Main({dados}) {
+export default function Container({dados}) {
 
   const substring = (descricao, comprimento) => {
     if (comprimento <= 0 && !descricao)
@@ -23,12 +23,14 @@ export default function Main({dados}) {
                 {dados.map((item) => (
                     
                     <div key={item["id"]} className={item["size"]}>
+                      
                         <Link href={{
-                          pathname: "/itemview",
+                          pathname: "/conteinerview",
                           query: {"imagem": item["imagem"], "titulo": item["titulo"], "descricao": item["descricao"], "tipo": item["tipo"]}
                         }}
                         className="item">
-                            <img src={item["image"]} alt="" />
+                            {item["imagem"] ? <img src={item["imagem"]} alt="" /> : <p></p>}
+                            
                             <h3>{substring(item["titulo"], 20)}</h3>
                             <p className="descricao">{substring(item["descricao"], 120)} {<strong>. . . Ler mais</strong>}</p>
                             <p className="tipo">{item["tipo"]}</p>
